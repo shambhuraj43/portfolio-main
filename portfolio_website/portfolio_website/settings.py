@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'landing_page',
     'resume_section',
+    'signup_section',
 ]
 
 MIDDLEWARE = [
