@@ -28,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
   list-style: none; }
@@ -99,7 +100,7 @@ body {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-color: #000;
+  background-color: rgb(87, 66, 66);
   padding: 6em 4em 4em 4em; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
