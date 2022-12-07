@@ -38,7 +38,8 @@
 						images: {
 							'../../static/signup_section/images/bg01.jpg': 'center',
 							'../../static/signup_section/images/bg02.jpg': 'center',
-							'../../static/signup_section/images/bg03.jpg': 'center'
+							'../../static/signup_section/images/bg03.jpg': 'center',
+							'../../static/signup_section/images/bg04.jpg': 'center',
 						},
 
 					// Delay.
