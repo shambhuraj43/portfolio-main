@@ -29,7 +29,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+						<a href="{% url 'landing_page:index' %}" class="logo">Portfolio</a>
 					</header>
 
 				<!-- Nav -->
@@ -208,7 +208,10 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul>
+							<li>&copy; Some Copyright</li>
+							<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
+						</ul>
 					</div>
 
 			</div>
