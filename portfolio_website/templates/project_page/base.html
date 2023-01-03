@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+	<head>
+		<title>Project Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Font Awesome Links -->
+		<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href='{% static "project_page/assets/css/main.css" %}' />
+		<noscript><link rel="stylesheet" href='{% static "project_page/assets/css/noscript.css" %}'/></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
+						<h1>Project Page</h1>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="{% url 'landing_page:index' %}" >Home</a></li>
+							<li><a href="#introduction" class="active">Description</a></li>
+							<li><a href="#technologoies-used">Technologies Used</a></li>
+							<li><a href="#installation-requirements">Installation Requirements</a></li>
+							<li><a href="#github" target="_blank" >GitHub</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="introduction" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Description</h2>
+										</header>
+										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
+										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
+										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<!-- <ul class="actions">
+											<li><a href='{% static "project_page/generic.html" %}' class="button">Learn More</a></li>
+										</ul> -->
+									</div>
+									<!-- <span class="image"><img src='{% static "project_page/images/pic01.jpg" %}' alt="" /></span> -->
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="technologoies-used" class="main special">
+								<header class="major">
+									<h2>Technologies Used</h2>
+								</header>
+								<ul class="features">
+									{% for i in data %}
+									<li>
+										<i class="fa-brands fa-github fa-3x"></i>
+										<h3>Ipsum consequat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									{% endfor%}
+									<!-- <li>
+										<i class="fa-brands fa-docker fa-3x"></i>
+										<h3>Amed sed feugiat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<i class="fa-brands fa-kubernetes fa-3x"></i>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<i class="fa-brands fa-tdd fa-3x"></i>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li> -->
+								</ul>
+							</section>
+
+						<!-- Second Section -->
+							<section id="installation-requirements" class="main special">
+								<header class="major">
+									<h2>Installation Requirements</h2>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href='{% static "project_page/generic.html" %}' class="button">Requirements.txt</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="github" class="main special">
+								<header class="major">
+									<h2>GitHub Repo</h2>
+								</header>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href='{% static "project_page/generic.html" %}' class="button">GitHub</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<ul class="icons">
+								<li><a href="{% url 'landing_page:index' %}" class="icon solid fa-home alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/shambhuraj/" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/Shambhuraj43" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src='{% static "project_page/assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "project_page/assets/js/jquery.scrollex.min.js" %}'></script>
+			<script src='{% static "project_page/assets/js/jquery.scrolly.min.js" %}'></script>
+			<script src='{% static "project_page/assets/js/browser.min.js" %}'></script>
+			<script src='{% static "project_page/assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "project_page/assets/js/util.js" %}'></script>
+			<script src='{% static "project_page/assets/js/main.js" %}'></script>
+			<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+
+	</body>
+</html>
