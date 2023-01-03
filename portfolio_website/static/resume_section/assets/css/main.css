@@ -37,6 +37,10 @@ ol, ul {
 	list-style: none;
 }
 
+.bullets {
+	list-style-type: circle;
+}
+
 blockquote, q {
 	quotes: none;
 }
