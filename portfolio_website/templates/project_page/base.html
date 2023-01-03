@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 	<head>
-		<title>Project Page</title>
+		<title>Shambhuraj's Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- Font Awesome Links -->
@@ -18,14 +18,14 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
-						<h1>Project Page</h1>
+						<h1>{{ project_name }}</h1>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="{% url 'landing_page:index' %}" >Home</a></li>
-							<li><a href="#introduction" class="active">Description</a></li>
+							<li><a href="#description" class="active">Description</a></li>
 							<li><a href="#technologoies-used">Technologies Used</a></li>
 							<li><a href="#installation-requirements">Installation Requirements</a></li>
 							<li><a href="#github" target="_blank" >GitHub</a></li>
@@ -36,15 +36,13 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="introduction" class="main">
+							<section id="description" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
 											<h2>Description</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
+										<p>{{ project_description }}</p>
 										<!-- <ul class="actions">
 											<li><a href='{% static "project_page/generic.html" %}' class="button">Learn More</a></li>
 										</ul> -->
@@ -59,36 +57,13 @@
 									<h2>Technologies Used</h2>
 								</header>
 								<ul class="features">
-									{% for i in data %}
+									{% for technology in technolgies_used %}
 									<li>
-										<i class="fa-brands fa-github fa-3x"></i>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+                                        <i class="fa-brands fa-{{technology.icon}} fa-3x"></i>
+										<h3>{{ technology.name }}</h3>
+										<p>{{ technology.description }}</p>
 									</li>
-									{% endfor%}
-									<!-- <li>
-										<i class="fa-brands fa-docker fa-3x"></i>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<i class="fa-brands fa-kubernetes fa-3x"></i>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<i class="fa-brands fa-tdd fa-3x"></i>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li> -->
+									{% endfor %}
 								</ul>
 							</section>
 
@@ -99,7 +74,7 @@
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href='{% static "project_page/generic.html" %}' class="button">Requirements.txt</a></li>
+										<li><a href="{{requirements_file_link}}" target = "_blank" class="button">{{requirements_file}}</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -111,7 +86,7 @@
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href='{% static "project_page/generic.html" %}' class="button">GitHub</a></li>
+										<li><a href="{{github_repo_link}}" target = "_blank" class="button">GitHub</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -125,7 +100,7 @@
 								<li><a href="{% url 'landing_page:index' %}" class="icon solid fa-home alt"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.linkedin.com/in/shambhuraj/" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
 								<li><a href="https://github.com/Shambhuraj43" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
+								<li><a href="mailto:srajw818@gmail.com" target="_top" title="srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
 							</ul>
 						</section>
 					</footer>
