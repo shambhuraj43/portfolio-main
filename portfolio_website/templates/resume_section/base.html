@@ -77,7 +77,7 @@
       <nav id="nav">
         <ul>
           <li><a href="{% url 'landing_page:index' %}">Home</a></li>
-          <li><a href="#education" class="active">Education</a></li>
+          <li><a href="#education">Education</a></li>
           <li>
             <a href="#professional-experience">Professional Experience</a>
           </li>
@@ -96,13 +96,36 @@
               <header class="major">
                 <h2>Education</h2>
               </header>
+              <h3>
+                BS in Computer Science (Honors), Minor: Mathematics and
+                Statistics, GPA: 3.69
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                December 2022
+              </h3>
+              <h5></h5>
+              <h4>Purdue School of Science, IUPUI</h4>
+              <ul class="bullets_dash">
+                <li>Dean’s List, Scholar’s List</li>
+                <li>
+                  Recipient of Highly Prestigious Chancellor’s Scholarship
+                </li>
+                <li>
+                  Recipient of Mentoring Scholarship by Department of
+                  Mathematics, IUPUI
+                </li>
+                <li>
+                  MURI Research Scholarship, Center of Research and Learning,
+                  IUPUI
+                </li>
+              </ul>
+              <h3>Relevant Coursework:</h3>
               <p>
-                Sed lorem ipsum dolor sit amet nullam consequat feugiat
-                consequat magna adipiscing magna etiam amet veroeros. Lorem
-                ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum
-                dolor sit amet aliquam.
+                Data Structures and Algorithms, AI, Database Systems, Operating
+                Systems, Software Design, Advance Calculus, and Differential
+                Equations, Cloud Computing, Data Science, Theory of Computation,
+                Compilers Design, Algorithms, Parallel Computing,
               </p>
-              <ul class="actions">
+              <!-- <ul class="actions">
                 <li>
                   <a
                     href='{% static "resume_section/generic.html" %}'
@@ -110,7 +133,7 @@
                     >Learn More</a
                   >
                 </li>
-              </ul>
+              </ul> -->
             </div>
             <!-- <span class="image"><img src='{% static "resume_section/images/pic01.jpg" %}' alt="" /></span> -->
           </div>
@@ -216,7 +239,7 @@
                   >
                 </h5>
                 <div>
-                  <ul>
+                  <ul class="bullets">
                     <li>
                       Held recitation classes for 1 hour each week to tutor 7
                       students struggling in class to help them meet the
@@ -247,7 +270,7 @@
 				  </h5> -->
               </div>
               <div>
-                <ul>
+                <ul class="bullets">
                   <li>
                     Increased membership by 125% through organizing new events
                     such as CTF challenges, lock picking events, and alumni
@@ -267,7 +290,7 @@
             </li>
             <li>
               <div>
-                <h3>Math Mentor</h3>
+                <h3>Mathematics Mentor</h3>
                 <h5>
                   <em
                     >Department of Mathematical Sciences, IUPUI
@@ -276,7 +299,7 @@
                   >
                 </h5>
                 <div>
-                  <ul>
+                  <ul class="bullets">
                     <li>
                       Mentored two individual students on daily basis to help
                       resolve technical difficulties in Math courses they were
@@ -303,10 +326,33 @@
           <header class="major">
             <h2>Independent Projects</h2>
           </header>
+          <ul class="bullets_dash">
+            {% for project in projects %}
+            <li>
+              <span>{{project.name}} : {{project.technologies}}</span>
+              <span> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  More Info &nbsp; &nbsp;</span>
+              <a href="{% url 'project_page:project_page' project.name %}" target="_blank"><i class="icon solid fa-arrow-pointer"></i></a>
+            </li>
+            {% endfor %}
+          </ul>
           <footer class="major">
             <ul class="actions">
-              <li><a href="{% url 'landing_page:index' %}" target="_blank" class="button">Portfolio</a></li>
-              <li><a href="https://github.com/shambhuraj43" target="_blank" class="button">GitHub</a></li>
+              <li>
+                <a
+                  href="{% url 'landing_page:index' %}"
+                  target="_blank"
+                  class="button"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/shambhuraj43"
+                  target="_blank"
+                  class="button"
+                  >GitHub</a
+                >
+              </li>
             </ul>
           </footer>
         </section>
