@@ -69,14 +69,36 @@
                 ><span class="label">Email</span></a
               >
             </li>
+            <li>
+              <a
+                href="{% static 'resume_section/files/Shambhuraj_Wadghule_Resume.pdf' %}"
+                title="download my resume"
+                class="icon solid fa-arrow-down"
+                style="color: black"
+                target="_blank"
+                ><span class="label">Email</span></a
+              >
+            </li>
           </ul>
         </section>
       </header>
+      <section>
+        <ul class="icons">
+          <li>
+          <a
+            href="{% url 'landing_page:index' %}"
+            class="icon solid fa-home"
+            style="color: rgb(248, 241, 241)"
+            ><span class="label">LinkedIn</span></a
+            
+          >
+          </li>
+        </ul>
+        </section>
 
       <!-- Nav -->
       <nav id="nav">
         <ul>
-          <li><a href="{% url 'landing_page:index' %}">Home</a></li>
           <li><a href="#education">Education</a></li>
           <li>
             <a href="#professional-experience">Professional Experience</a>
@@ -391,6 +413,15 @@
                 title="srajw818@gmail.com"
                 class="icon solid fa-envelope alt"
                 ><span class="label">Email</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="{% static 'resume_section/files/Shambhuraj_Wadghule_Resume.pdf' %}"
+                title="download resume"
+                class="icon solid fa-arrow-down alt"
+                target="_blank"
+                ><span class="label">Resume</span></a
               >
             </li>
           </ul>
