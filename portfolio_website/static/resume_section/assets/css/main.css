@@ -41,6 +41,9 @@ ol, ul {
 	list-style-type: circle;
 }
 
+.bullets_dash {
+	list-style-type: '-';
+}
 blockquote, q {
 	quotes: none;
 }
@@ -1892,6 +1895,10 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
+			font-size: 0.8em;
+		}
+
+		.project-buttons{
 			font-size: 0.8em;
 		}
 
