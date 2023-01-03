@@ -5,6 +5,8 @@
 		<title>Project Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- Font Awesome Links -->
+		<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href='{% static "project_page/assets/css/main.css" %}' />
 		<noscript><link rel="stylesheet" href='{% static "project_page/assets/css/noscript.css" %}'/></noscript>
 	</head>
@@ -58,14 +60,17 @@
 								</header>
 								<ul class="features">
 									<li>
+										<i class="fa-brands fa-github fa-5x"></i>
 										<h3>Ipsum consequat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
+										<i class="fa-brands fa-docker fa-5x"></i>
 										<h3>Amed sed feugiat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
+										<i class="fa-brands fa-kubernetes fa-5x"></i>
 										<h3>Dolor nullam</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
@@ -117,7 +122,7 @@
 								<li><a href="{% url 'landing_page:index' %}" class="icon solid fa-home alt"><span class="label">Facebook</span></a></li>
 								<li><a href="https://www.linkedin.com/in/shambhuraj/" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
 								<li><a href="https://github.com/Shambhuraj43" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">jdhbc</span></a></li>
+								<li><a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
 							</ul>
 						</section>
 					</footer>
@@ -132,6 +137,7 @@
 			<script src='{% static "project_page/assets/js/breakpoints.min.js" %}'></script>
 			<script src='{% static "project_page/assets/js/util.js" %}'></script>
 			<script src='{% static "project_page/assets/js/main.js" %}'></script>
+			<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
 
 	</body>
 </html>
