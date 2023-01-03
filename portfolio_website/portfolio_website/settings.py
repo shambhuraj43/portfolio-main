@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'landing_page',
     'resume_section',
     'signup_section',
+    'fontawesomefree',
 ]
 
 MIDDLEWARE = [
