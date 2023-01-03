@@ -1,129 +1,186 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 {% load static %}
 <html>
-	<head>
-		<title>Shambhuraj's Project</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Font Awesome Links -->
-		<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href='{% static "project_page/assets/css/main.css" %}' />
-		<noscript><link rel="stylesheet" href='{% static "project_page/assets/css/noscript.css" %}'/></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Shambhuraj's Project</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- Font Awesome Links -->
+    <link
+      href="{% static 'fontawesomefree/css/all.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href='{% static "project_page/assets/css/main.css" %}'
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href='{% static "project_page/assets/css/noscript.css" %}'
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
+        <h1>{{ project_name }}</h1>
+      </header>
+	  <section>
+		<ul class="icons">
+		  <li>
+			<a
+			  href="{% url 'landing_page:index' %}"
+			  class="icon solid fa-home"
+			  style="color: rgb(248, 241, 241)"
+			  ><span class="label">LinkedIn</span></a
+			  
+			>
+		  </li>
+		</ul>
+	  </section>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#description" class="active">Description</a></li>
+          <li><a href="#technologoies-used">Technologies Used</a></li>
+          <li>
+            <a href="#installation-requirements">Installation Requirements</a>
+          </li>
+          <li><a href="#github" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
-						<h1>{{ project_name }}</h1>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="{% url 'landing_page:index' %}" >Home</a></li>
-							<li><a href="#description" class="active">Description</a></li>
-							<li><a href="#technologoies-used">Technologies Used</a></li>
-							<li><a href="#installation-requirements">Installation Requirements</a></li>
-							<li><a href="#github" target="_blank" >GitHub</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="description" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Description</h2>
-										</header>
-										<p>{{ project_description }}</p>
-										<!-- <ul class="actions">
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="description" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major">
+                <h2>Description</h2>
+              </header>
+              <p>{{ project_description }}</p>
+              <!-- <ul class="actions">
 											<li><a href='{% static "project_page/generic.html" %}' class="button">Learn More</a></li>
 										</ul> -->
-									</div>
-									<!-- <span class="image"><img src='{% static "project_page/images/pic01.jpg" %}' alt="" /></span> -->
-								</div>
-							</section>
+            </div>
+            <!-- <span class="image"><img src='{% static "project_page/images/pic01.jpg" %}' alt="" /></span> -->
+          </div>
+        </section>
 
-						<!-- First Section -->
-							<section id="technologoies-used" class="main special">
-								<header class="major">
-									<h2>Technologies Used</h2>
-								</header>
-								<ul class="features">
-									{% for technology in technolgies_used %}
-									<li>
-                                        <i class="fa-brands fa-{{technology.icon}} fa-3x"></i>
-										<h3>{{ technology.name }}</h3>
-										<p>{{ technology.description }}</p>
-									</li>
-									{% endfor %}
-								</ul>
-							</section>
+        <!-- First Section -->
+        <section id="technologoies-used" class="main special">
+          <header class="major">
+            <h2>Technologies Used</h2>
+          </header>
+          <ul class="features">
+            {% for technology in technolgies_used %}
+            <li>
+              <i class="fa-brands fa-{{technology.icon}} fa-3x"></i>
+              <h3>{{ technology.name }}</h3>
+              <p>{{ technology.description }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
 
-						<!-- Second Section -->
-							<section id="installation-requirements" class="main special">
-								<header class="major">
-									<h2>Installation Requirements</h2>
-                                    <ul class="features">
-                                        {% for item in installation_requirements%}
-                                            <p>item.req : item.version</p>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <p>|</p>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        {% endfor %}
-                                    </ul>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="{{requirements_file_link}}" target = "_blank" class="button">{{requirements_file}}</a></li>
-									</ul>
-								</footer>
-							</section>
+        <!-- Second Section -->
+        <section id="installation-requirements" class="main special">
+          <header class="major">
+            <h2>Installation Requirements</h2>
+            <ul class="features">
+              {% for item in installation_requirements%}
+              <p>item.req : item.version</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>|</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {% endfor %}
+            </ul>
+          </header>
+          <footer class="major">
+            <ul class="actions special">
+              <li>
+                <a
+                  href="{{requirements_file_link}}"
+                  target="_blank"
+                  class="button"
+                  >{{requirements_file}}</a
+                >
+              </li>
+            </ul>
+          </footer>
+        </section>
 
-						<!-- Get Started -->
-							<section id="github" class="main special">
-								<header class="major">
-									<h2>GitHub Repo</h2>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="{{github_repo_link}}" target = "_blank" class="button">GitHub</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<ul class="icons">
-								<li><a href="{% url 'landing_page:index' %}" class="icon solid fa-home alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/shambhuraj/" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/Shambhuraj43" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:srajw818@gmail.com" target="_top" title="srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-					</footer>
-
+        <!-- Get Started -->
+        <section id="github" class="main special">
+          <header class="major">
+            <h2>GitHub Repo</h2>
+          </header>
+          <footer class="major">
+            <ul class="actions special">
+              <li>
+                <a href="{{github_repo_link}}" target="_blank" class="button"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </footer>
+        </section>
+	</div>
+	        <!-- Footer -->
+			<footer id="footer">
+				<section>
+				  <ul class="icons">
+					<li>
+					  <a
+						href="{% url 'landing_page:index' %}"
+						class="icon solid fa-home alt"
+						><span class="label">Facebook</span></a
+					  >
+					</li>
+					<li>
+					  <a
+						href="https://www.linkedin.com/in/shambhuraj/"
+						class="icon brands fa-linkedin alt"
+						><span class="label">Facebook</span></a
+					  >
+					</li>
+					<li>
+					  <a
+						href="https://github.com/Shambhuraj43"
+						class="icon brands fa-github alt"
+						><span class="label">GitHub</span></a>
+					</li>
+					<li>
+					  <a
+						href="mailto:srajw818@gmail.com"
+						target="_top"
+						title="srajw818@gmail.com"
+						class="icon solid fa-envelope alt"
+						><span class="label">Email</span></a>
+					</li>
+				  </ul>
+				</section>
+			  </footer>
 			</div>
+	
+    </div>
 
-		<!-- Scripts -->
-			<script src='{% static "project_page/assets/js/jquery.min.js" %}'></script>
-			<script src='{% static "project_page/assets/js/jquery.scrollex.min.js" %}'></script>
-			<script src='{% static "project_page/assets/js/jquery.scrolly.min.js" %}'></script>
-			<script src='{% static "project_page/assets/js/browser.min.js" %}'></script>
-			<script src='{% static "project_page/assets/js/breakpoints.min.js" %}'></script>
-			<script src='{% static "project_page/assets/js/util.js" %}'></script>
-			<script src='{% static "project_page/assets/js/main.js" %}'></script>
-			<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
 
-	</body>
+    <!-- Scripts -->
+    <script src='{% static "project_page/assets/js/jquery.min.js" %}'></script>
+    <script src='{% static "project_page/assets/js/jquery.scrollex.min.js" %}'></script>
+    <script src='{% static "project_page/assets/js/jquery.scrolly.min.js" %}'></script>
+    <script src='{% static "project_page/assets/js/browser.min.js" %}'></script>
+    <script src='{% static "project_page/assets/js/breakpoints.min.js" %}'></script>
+    <script src='{% static "project_page/assets/js/util.js" %}'></script>
+    <script src='{% static "project_page/assets/js/main.js" %}'></script>
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+  </body>
 </html>
