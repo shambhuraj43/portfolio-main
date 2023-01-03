@@ -1,81 +1,138 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 {% load static %}
 <html>
-	<head>
-		<title>Shambhuraj's Résumé</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Font Awesome Links -->
-		<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href='{% static "resume_section/assets/css/main.css" %}' />
-		<noscript><link rel="stylesheet" href='{% static "resume_section/assets/css/noscript.css" %}'/></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <title>Shambhuraj's Résumé</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- Font Awesome Links -->
+    <link
+      href="{% static 'fontawesomefree/css/all.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href='{% static "resume_section/assets/css/main.css" %}'
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href='{% static "resume_section/assets/css/noscript.css" %}'
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <!-- <span class="logo"><img src='{% static "resume_section/images/logo.svg" %}'' alt="" /></span> -->
+        <h1>Shambhuraj Wadghule</h1>
+        <h5>Software Engineer, Full Stack Developer</h5>
+        <section>
+          <ul class="icons">
+            <li>
+              <a
+                href="{% url 'landing_page:index' %}"
+                class="icon sharp solid fa-arrow-pointer"
+                style="color: black"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shambhuraj/"
+                target="_blank"
+                class="icon brands fa-linkedin"
+                style="color: black"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shambhuraj43"
+                target="_blank"
+                class="icon brands fa-github"
+                style="color: black"
+                ><span class="label">Github</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:srajw818@gmail.com"
+                title="srajw818@gmail.com"
+                class="icon solid fa-envelope"
+                style="color: black"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="{% url 'landing_page:index' %}">Home</a></li>
+          <li><a href="#education" class="active">Education</a></li>
+          <li>
+            <a href="#professional-experience">Professional Experience</a>
+          </li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#leadership" target="_blank">Leadership</a></li>
+          <li><a href="#projects" target="_blank">Projects</a></li>
+        </ul>
+      </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src='{% static "resume_section/images/logo.svg" %}'' alt="" /></span> -->
-						<h1>Shambhuraj Wadghule</h1>
-                        <h5>Software Engineer, Full Stack Developer</h5>
-                        <section>
-                            <ul class="icons">
-                                <li><a href="{% url 'landing_page:index' %}" class="icon sharp solid fa-arrow-pointer" style="color:black"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="https://www.linkedin.com/in/shambhuraj/" target="_blank"  class="icon brands fa-linkedin" style="color:black"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="https://github.com/Shambhuraj43" target="_blank" class="icon brands fa-github" style="color:black"><span class="label">Github</span></a></li>
-                                <li><a href="mailto:srajw818@gmail.com" title="srajw818@gmail.com" class="icon solid fa-envelope" style="color:black"><span class="label">Email</span></a></li>
-                            </ul>
-						</section>
-					</header>
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="education" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major">
+                <h2>Education</h2>
+              </header>
+              <p>
+                Sed lorem ipsum dolor sit amet nullam consequat feugiat
+                consequat magna adipiscing magna etiam amet veroeros. Lorem
+                ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum
+                dolor sit amet aliquam.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    href='{% static "resume_section/generic.html" %}'
+                    class="button"
+                    >Learn More</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- <span class="image"><img src='{% static "resume_section/images/pic01.jpg" %}' alt="" /></span> -->
+          </div>
+        </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="{% url 'landing_page:index' %}" >Home</a></li>
-							<li><a href="#introduction" class="active">Description</a></li>
-							<li><a href="#technologoies-used">Technologies Used</a></li>
-							<li><a href="#installation-requirements">Installation Requirements</a></li>
-							<li><a href="#github" target="_blank" >GitHub</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="introduction" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Description</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<!-- <ul class="actions">
-											<li><a href='{% static "resume_section/generic.html" %}' class="button">Learn More</a></li>
-										</ul> -->
-									</div>
-									<!-- <span class="image"><img src='{% static "resume_section/images/pic01.jpg" %}' alt="" /></span> -->
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="technologoies-used" class="main special">
-								<header class="major">
-									<h2>Technologies Used</h2>
-								</header>
-								<ul class="features">
-									{% for i in data %}
-									<li>
-										<i class="fa-brands fa-github fa-3x"></i>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									{% endfor%}
-									<!-- <li>
+        <!-- First Section -->
+        <section id="professional-experience" class="main">
+          <header class="major">
+            <h2>Professional Experience</h2>
+          </header>
+          <ul class="features">
+            {% for i in data %}
+            <li>
+              <i class="fa-brands fa-github fa-3x"></i>
+              <h3>Ipsum consequat</h3>
+              <p>
+                Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
+                consequat tempus veroeros sed consequat.
+              </p>
+            </li>
+            {% endfor%}
+            <!-- <li>
 										<i class="fa-brands fa-docker fa-3x"></i>
 										<h3>Amed sed feugiat</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
@@ -98,58 +155,211 @@
 										<h3>Dolor nullam</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li> -->
-								</ul>
-							</section>
+          </ul>
+        </section>
 
-						<!-- Second Section -->
-							<section id="installation-requirements" class="main special">
-								<header class="major">
-									<h2>Installation Requirements</h2>
-								</header>
-								<footer class="major">
+        <!-- Second Section -->
+        <section id="publications" class="main">
+          <header class="major">
+            <h2>Publications</h2>
+          </header>
+          <div>
+            <ul>
+              <li class="actions">
+                <p>
+                  J. Zhang, G. Singui, S. Wadghule, and C. Frend, "Virtual
+                  Reality Module for Additive Manufacturing Curriculum," in 2020
+                  Illinois- Indiana Section Conference Proceedings,
+                  Indianapolis, Indiana, USA, 2020, pp. S900-1.
+                </p>
+              </li>
+              <li class="actions">
+                <p>
+                  Zhang, J., & Singui, G., & Wadghule, S. H., & Frend, C. E., &
+                  Dube, T. C., & Golub, M. (2020, June), Developing a Virtual
+                  Reality Module to Improve the Student Learning Experience in
+                  an Additive Manufacturing Curriculum Paper presented at 2020
+                  ASEE Virtua
+                </p>
+              </li>
+              <li>
+                <p>
+                  Virtual Reality and Godot Modules for Metal Additive
+                  Manufacturing Education and Training Shambhuraj Wadghule, Josh
+                  Hale, Tejesh Dube, Jing Zhang Indiana University – Purdue
+                  University Indianapolis, Indianapolis, Indiana, USA
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- <footer class="major">
 									<ul class="actions special">
 										<li><a href='' class="button">Requirements.txt</a></li>
 									</ul>
-								</footer>
-							</section>
+								</footer> -->
+        </section>
 
-						<!-- Get Started -->
-							<section id="github" class="main special">
-								<header class="major">
-									<h2>GitHub Repo</h2>
-								</header>
-								<footer class="major">
+        <section id="leadership" class="main">
+          <header class="major">
+            <h2>Leadership</h2>
+          </header>
+
+          <ul>
+            <li>
+              <div>
+                <h3>Computer Science Teaching Assistant</h3>
+                <h5>
+                  <em
+                    >Department of Computer and Information Science, IUPUI
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2022/01 – Present</em
+                  >
+                </h5>
+                <div>
+                  <ul>
+                    <li>
+                      Held recitation classes for 1 hour each week to tutor 7
+                      students struggling in class to help them meet the
+                      homework requirements.
+                    </li>
+                    <li>
+                      Helped 13 students master complicated concepts of Discrete
+                      Mathematics in one on one sessions and during office hours
+                      to obtain the best grades.
+                    </li>
+                    <li>
+                      Performed achievement-based grading to ensure fair grading
+                      and feedback to help students overcome technical
+                      challenges in the class.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Vice President - Cybersecurity Club @ IUPUI</h3>
+                <!-- <h5>
+					<em
+					  >Department of Computer and Information Science, IUPUI
+					  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					  2022/01 – Present</em>
+				  </h5> -->
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    Increased membership by 125% through organizing new events
+                    such as CTF challenges, lock picking events, and alumni
+                    recruiting events.
+                  </li>
+                  <li>
+                    Sourced 5+ alumni to serve as mentors to club members
+                    through red-teaming challenges, technical workshops, and
+                    other professional activities
+                  </li>
+                  <li>
+                    Developed and managed a daily cybersecurity newsletter which
+                    is distributed to 200+ students and faculty.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Math Mentor</h3>
+                <h5>
+                  <em
+                    >Department of Mathematical Sciences, IUPUI
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2022/01 – Present</em
+                  >
+                </h5>
+                <div>
+                  <ul>
+                    <li>
+                      Mentored two individual students on daily basis to help
+                      resolve technical difficulties in Math courses they were
+                      taking.
+                    </li>
+                    <li>
+                      Tutored 15 students on daily basis visiting Math
+                      Assistance Center, IUPUI struggling with Math concepts.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <footer class="major">
 									<ul class="actions special">
-										<li><a href='' class="button">GitHub</a></li>
+										<li><a href='' class="button">Requirements.txt</a></li>
 									</ul>
-								</footer>
-							</section>
+								</footer> -->
+        </section>
 
-					</div>
+        <!-- Get Started -->
+        <section id="projects" class="main">
+          <header class="major">
+            <h2>Independent Projects</h2>
+          </header>
+          <footer class="major">
+            <ul class="actions">
+              <li><a href="{% url 'landing_page:index' %}" target="_blank" class="button">Portfolio</a></li>
+              <li><a href="https://github.com/shambhuraj43" target="_blank" class="button">GitHub</a></li>
+            </ul>
+          </footer>
+        </section>
+      </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<ul class="icons">
-								<li><a href="{% url 'landing_page:index' %}" class="icon solid fa-home alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.linkedin.com/in/shambhuraj/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/Shambhuraj43" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="mailto:srajw818@gmail.com" title="srajw818@gmail.com" class="icon solid fa-envelope alt"><span class="label">Email</span></a></li>
-							</ul>
-						</section>
-					</footer>
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <ul class="icons">
+            <li>
+              <a
+                href="{% url 'landing_page:index' %}"
+                class="icon solid fa-home alt"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shambhuraj/"
+                target="_blank"
+                class="icon brands fa-linkedin alt"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/shambhuraj43"
+                target="_blank"
+                class="icon brands fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:srajw818@gmail.com"
+                title="srajw818@gmail.com"
+                class="icon solid fa-envelope alt"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src='{% static "resume_section/assets/js/jquery.min.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/jquery.scrollex.min.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/jquery.scrolly.min.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/browser.min.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/breakpoints.min.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/util.js" %}'></script>
-			<script src='{% static "resume_section/assets/js/main.js" %}'></script>
-			<script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src='{% static "resume_section/assets/js/jquery.min.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/jquery.scrollex.min.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/jquery.scrolly.min.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/browser.min.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/breakpoints.min.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/util.js" %}'></script>
+    <script src='{% static "resume_section/assets/js/main.js" %}'></script>
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+  </body>
 </html>
