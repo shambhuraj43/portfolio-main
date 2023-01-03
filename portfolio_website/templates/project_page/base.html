@@ -71,6 +71,14 @@
 							<section id="installation-requirements" class="main special">
 								<header class="major">
 									<h2>Installation Requirements</h2>
+                                    <ul class="features">
+                                        {% for item in installation_requirements%}
+                                            <p>item.req : item.version</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <p>|</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        {% endfor %}
+                                    </ul>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
