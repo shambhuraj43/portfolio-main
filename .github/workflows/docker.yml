@@ -1,6 +1,6 @@
 on:
   pull_request:
-    branches: [master]
+    branches: [master, main]
 jobs:
   build-container:
     name: Build Docker build-container
