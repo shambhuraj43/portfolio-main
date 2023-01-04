@@ -85,16 +85,15 @@
       <section>
         <ul class="icons">
           <li>
-          <a
-            href="{% url 'landing_page:index' %}"
-            class="icon solid fa-home"
-            style="color: rgb(248, 241, 241)"
-            ><span class="label">LinkedIn</span></a
-            
-          >
+            <a
+              href="{% url 'landing_page:index' %}"
+              class="icon solid fa-home"
+              style="color: rgb(248, 241, 241)"
+              ><span class="label">LinkedIn</span></a
+            >
           </li>
         </ul>
-        </section>
+      </section>
 
       <!-- Nav -->
       <nav id="nav">
@@ -105,13 +104,14 @@
           </li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#leadership" target="_blank">Leadership</a></li>
+          <li><a href="#skills" target="_blank">Skills</a></li>
           <li><a href="#projects" target="_blank">Projects</a></li>
         </ul>
       </nav>
 
       <!-- Main -->
       <div id="main">
-        <!-- Introduction -->
+        <!-- Education -->
         <section id="education" class="main">
           <div class="spotlight">
             <div class="content">
@@ -161,7 +161,7 @@
           </div>
         </section>
 
-        <!-- First Section -->
+        <!-- Professional Experience -->
         <section id="professional-experience" class="main">
           <header class="major">
             <h2>Professional Experience</h2>
@@ -180,7 +180,7 @@
           </ul>
         </section>
 
-        <!-- Second Section -->
+        <!-- Publications -->
         <section id="publications" class="main">
           <header class="major">
             <h2>Publications</h2>
@@ -221,6 +221,7 @@
 								</footer> -->
         </section>
 
+        <!-- Leadership -->
         <section id="leadership" class="main">
           <header class="major">
             <h2>Leadership</h2>
@@ -320,7 +321,46 @@
 								</footer> -->
         </section>
 
-        <!-- Get Started -->
+        <!-- Projects -->
+        <section id="skills" class="main">
+          <header class="major">
+            <h2>Skills</h2>
+          </header>
+          <ul class="bullets_dash">
+            <li>
+              <div><p><strong>Programming Languages:</strong> Python, C/C++, Java, JavaScript, C#</p></div>
+            </li>
+            <li>
+              <div><p> <strong>Frameworks:</strong> Django, Flask, React, Express, jQuery, NodeJs</p></div>
+            </li>
+            <li>
+              <div><p><strong>CI/CD:</strong> Docker, Kubernetes, Jenkins, GitHub Actions</p></div>
+            </li>
+            <li>
+              <div><p><strong>DVCS:</strong> Git, GitHub, GitLab </p></div>
+            </li>
+            <li>
+              <div><p><strong>Database:</strong> SQLite, PostgreSQL, MySQL, MongoDB </p></div>
+            </li>
+            <li>
+              <div><p><strong>API:</strong> REST API, Postman/Insomnia </p></div>
+            </li>
+            <li>
+              <div><p><strong>Cloud/Depolyement:</strong> AWS (S3, EC2, ECR, ECS), Heroku</p></div>
+            </li>
+            <li>
+              <div><p><strong>Test Driven Develpoment:</strong> PyTest Library</p></div>
+            </li>
+            <li>
+              <div><p><strong>Agile/SCRUM Development</strong> </p></div>
+            </li>
+            <li>
+              <div><p><strong>Other:</strong> PTC Creo, Solidworks, Unity, 3DS MAX & Interactive, Matlab, Grafana, Apache2 </p></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Projects -->
         <section id="projects" class="main">
           <header class="major">
             <h2>Independent Projects</h2>
@@ -329,8 +369,16 @@
             {% for project in projects %}
             <li>
               <span>{{project.name}} : {{project.technologies}}</span>
-              <span> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  More Info &nbsp; &nbsp;</span>
-              <a href="{% url 'project_page:project_page' project.name %}" target="_blank"><i class="icon solid fa-arrow-pointer"></i></a>
+              <span>
+                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; More
+                Info &nbsp; &nbsp;</span
+              >
+              <a
+                href="{% url 'project_page:project_page' project.name %}"
+                target="_blank"
+                ><i class="icon solid fa-arrow-pointer"></i
+              ></a>
             </li>
             {% endfor %}
           </ul>
