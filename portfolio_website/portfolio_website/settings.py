@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'resume_section',
     'signup_section',
     'fontawesomefree',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
