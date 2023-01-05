@@ -10,7 +10,9 @@ class ProjectType(DjangoObjectType):
 
 
 class Query(graphene.ObjectType):
-    all_books = graphene.List(ProjectType)
+    all_projects = graphene.List(ProjectType)
 
+    def resolve_all_projects(root, info):
+        return Project.objects.all()
 
 schema = graphene.Schema(query=Query)
