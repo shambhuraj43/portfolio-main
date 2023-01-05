@@ -1,6 +1,7 @@
 # on:
-#   pull_request:
-#     branches: [master, main]
+#   push:
+#     branches:
+#       - main
 # jobs:
 #   build-container:
 #     name: Build Docker build-container
