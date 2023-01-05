@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-def index(request, project_id):
+def base_page(request, project_id):
 
     context = {
         "portfolio": {
@@ -81,4 +81,4 @@ def index(request, project_id):
             "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
         }
     }
-    return render(request, f"project_page/{project_id}.html", context[project_id])
+    return render(request, f"project_page/base.html", context[project_id])

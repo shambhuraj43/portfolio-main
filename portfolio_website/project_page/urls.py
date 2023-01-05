@@ -4,5 +4,5 @@ from project_page import views
 app_name = 'project_page'
 
 urlpatterns = [
-    path('project/<str:project_id>', views.index, name='project_page'),
+    path('projects/<str:project_id>', views.base_page, name='base_page'),
 ]

@@ -25,13 +25,13 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="{% url 'landing_page:index' %}" class="logo">Portfolio</a>
+						<a href="" class="logo">Portfolio</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="{% url 'landing_page:index' %}">Projects</a></li>
+							<li class="active"><a href="{% url 'resume_section:resume_page' %}">Projects</a></li>
 							<li><a href="{% url 'resume_section:resume_page' %}">Resume</a></li>
 							<li><a href="{% url 'signup_section:index' %}">Sign Up</a></li>
 						</ul>
@@ -73,7 +73,7 @@
 									<a href="#" class="image fit"><img src="{% static 'landing_page/images/pic02.jpg' %}" alt="" /></a>
 									<p>Website to Showcase Independent Projects built with Django and hosted on Python Anywhere.</p>
 									<ul class="actions special">
-										<li><a href="{% url 'project_page:index' 'portfolio' %}" class="button">Learn More</a></li>
+										<li><a href="{% url 'project_page:base_page' 'portfolio' %}" class="button">Learn More</a></li>
 									</ul>
 								</article>
 								<article>
