@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Projects(models.Model):
+class Project(models.Model):
     project_name = models.CharField(max_length=1000)
     project_description = models.CharField(max_length=1000)
     requirements_file = models.CharField(max_length=1000)
