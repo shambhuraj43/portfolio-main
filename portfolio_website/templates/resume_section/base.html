@@ -509,23 +509,23 @@
             <h2>Independent Projects</h2>
           </header>
           <ul class="bullets_dash">
-            {% for project in projects %}
+            {% for project, project_data in projects.items %}
             <li>
               <span
-                ><strong>{{project.name}} : </strong
-                >{{project.technologies}}</span
+                ><strong>{{project_data.name}} : </strong
+                >{{project_data.technologies}}</span
               >
               <span> &nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;</span>
-              {% if project.web_pag %}
+              {% if project_data.web_page == True %}
               <a
-                href="{% url 'project_page:base_page' project.web_link %}"
+                href="{% url 'project_page:base_page' project_data.web_link %}"
                 target="_blank"
               >
                 More Info <i class="icon solid fa-arrow-pointer"></i
               ></a>
-              {% else %}
+              {% elif project_data.web_page is False %}
               <a
-                href="{% url 'project_page:github_page' project.web_link %}"
+                href="{% url 'project_page:github_page' project_data.web_link %}"
                 target="_blank"
               >
                 More Info <i class="icon solid fa-arrow-pointer"></i
@@ -565,7 +565,7 @@
               <a
                 href="{% url 'landing_page:index' %}"
                 class="icon solid fa-home alt"
-                ><span class="label">Facebook</span></a
+                ><span class="label">Landing Page</span></a
               >
             </li>
             <li>
@@ -573,7 +573,7 @@
                 href="https://www.linkedin.com/in/shambhuraj/"
                 target="_blank"
                 class="icon brands fa-linkedin alt"
-                ><span class="label">Facebook</span></a
+                ><span class="label">LinkedIn</span></a
               >
             </li>
             <li>
