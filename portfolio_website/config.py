@@ -93,7 +93,7 @@ project_page_context = {
         "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main",
         "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
     },
-    "django-rest-api": {
+    "rest-api-django": {
         "project_name": "PROJECT_NAME",
         "project_description": "PROJECT_DESCRIPTION",
         "technolgies_used": [
