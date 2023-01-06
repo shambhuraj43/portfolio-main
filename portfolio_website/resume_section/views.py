@@ -4,7 +4,7 @@ from config import projects_context
 
 
 def resume_page(request):
-    return render(request, "resume_section/base.html", projects_context)
+    return render(request, "resume_section/base.html", {"projects":projects_context})
 
 
 def education(request):
