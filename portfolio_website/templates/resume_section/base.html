@@ -416,16 +416,14 @@
           <ul class="bullets_dash">
             {% for project in projects %}
             <li>
-              <span>{{project.name}} : {{project.technologies}}</span>
+              <span><strong>{{project.name}} : </strong>{{project.technologies}}</span>
               <span>
-                &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; More
-                Info &nbsp; &nbsp;</span
+                &nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;</span
               >
               <a
                 href="{% url 'project_page:base_page' project.name %}"
                 target="_blank"
-                ><i class="icon solid fa-arrow-pointer"></i
+                > More Info  <i class="icon solid fa-arrow-pointer"></i
               ></a>
             </li>
             {% endfor %}
