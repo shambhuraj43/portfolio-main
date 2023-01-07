@@ -24,8 +24,8 @@ projects_context = {
     "Software_Design_Calculator_App": {
         "name": "Software Design Calculator",
         "technologies": "Software Design, SOLID Principles",
-        "web_page": True,
-        "web_link": "Software_Design_Calculator_App",
+        "web_page": False,
+        "web_link": "Optimized_Software_Design_Calculator_App",
     },
     "Random-User-Generator-React": {
         "name": "Random Contact Card",
