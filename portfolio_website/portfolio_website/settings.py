@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'landing_page',
     'resume_section',
     'project_page',
+    'resume_page',
     'signup_section',
     'fontawesomefree',
     'graphene_django',
