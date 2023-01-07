@@ -54,10 +54,10 @@ projects_context = {
 }
 
 # Context to generate Project Pages.
-project_page_context = {
+projects_information = {
     "portfolio-main": {
-        "project_name": "PROJECT_NAME",
-        "project_description": "PROJECT_DESCRIPTION",
+        "name": "PROJECT_NAME",
+        "description": "PROJECT_DESCRIPTION",
         "technolgies_used": [
             {
                 "name": "docker",
@@ -94,8 +94,8 @@ project_page_context = {
         "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
     },
     "rest-api-django": {
-        "project_name": "PROJECT_NAME",
-        "project_description": "PROJECT_DESCRIPTION",
+        "name": "PROJECT_NAME",
+        "description": "PROJECT_DESCRIPTION",
         "technolgies_used": [
             {
                 "name": "docker",
