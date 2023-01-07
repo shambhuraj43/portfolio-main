@@ -2,7 +2,7 @@
 {% load static %}
 <html>
   <head>
-    <title>Shambhuraj's Project</title>
+    <title>Shambhuraj's {{ project.name }}</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -30,7 +30,7 @@
       <!-- Header -->
       <header id="header" class="alt">
         <!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
-        <h1>{{ project_name }}</h1>
+        <h1>{{ project.name }}</h1>
       </header>
 	  <section>
 		<ul class="icons">
@@ -66,7 +66,7 @@
               <header class="major">
                 <h2>Description</h2>
               </header>
-              <p>{{ project_description }}</p>
+              <p>{{ project.description }}</p>
               <!-- <ul class="actions">
 											<li><a href='{% static "project_page/generic.html" %}' class="button">Learn More</a></li>
 										</ul> -->
@@ -81,7 +81,7 @@
             <h2>Technologies Used</h2>
           </header>
           <ul class="features">
-            {% for technology in technolgies_used %}
+            {% for technology in project.technolgies_used %}
             <li>
               <i class="fa-brands fa-{{technology.icon}} fa-3x"></i>
               <h3>{{ technology.name }}</h3>
@@ -96,7 +96,7 @@
           <header class="major">
             <h2>Installation Requirements</h2>
             <ul class="features">
-              {% for item in installation_requirements%}
+              {% for item in project.installation_requirements %}
               <p>item.req : item.version</p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <p>|</p>
@@ -110,7 +110,7 @@
                   href="{{requirements_file_link}}"
                   target="_blank"
                   class="button"
-                  >{{requirements_file}}</a
+                  >{{ project.requirements_file }}</a
                 >
               </li>
             </ul>
@@ -141,7 +141,7 @@
 					  <a
 						href="{% url 'landing_page:index' %}"
 						class="icon solid fa-home alt"
-						><span class="label">Facebook</span></a
+						><span class="label">Landing Page</span></a
 					  >
 					</li>
 					<li>
@@ -149,7 +149,7 @@
 						href="https://www.linkedin.com/in/shambhuraj/"
 						class="icon brands fa-linkedin alt"
             target="_blank"
-						><span class="label">Facebook</span></a
+						><span class="label">LinkedIn</span></a
 					  >
 					</li>
 					<li>
