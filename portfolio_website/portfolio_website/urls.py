@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include("resume_section.urls")),
     path('', include("signup_section.urls")),
     path('', include("project_page.urls")),
+    path('', include("resume_page.urls")),
 ]
