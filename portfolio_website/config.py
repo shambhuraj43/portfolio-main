@@ -60,37 +60,76 @@ projects_information = {
         "description": "PROJECT_DESCRIPTION",
         "technolgies_used": [
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": 'docker'
+                "name": "Django - Python Framewrok",
+                "description": "Built Django's MVT Architecture and ORM Feature",
+                "icon": 'python',
+                "icon_type": 'brands'
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "Docker",
+                "description": "Containerization with Docker Compose and Docker Hub Artifactory",
+                "icon": "docker",
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "MySQL & SQLite",
+                "description": "Database for storing Project related Information",
+                "icon": "database",
+                "icon_type": "solid"
+            },
+            {
+                "name": "GraphQL & REST API",
+                "description": "CRUD Operations on Data with GraphQL (using Graphene), Django REST Framework",
+                "icon": "circle-nodes",
+                "icon_type": "solid",
+            },
+            {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+            {
+                "name": "GitHub Actions",
+                "description": "CI/CD Pipeline, Automated linting, testing, building, containerization, pushing to Docker Hub Artifactory",
+                "icon": "circle-play",
+                "icon_type": "regular"
+            },
+            {
+                "name": "Test Driven Development",
+                "description": "Testing with PyTest Library",
+                "icon": "screwdriver-wrench",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Cloud Deployment",
+                "description": "Python Anywhere Service, AWS",
+                "icon": "cloud-arrow-up",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Local Deployment",
+                "description": "Apache2, Ubuntu",
+                "icon": "server",
+                "icon_type": "solid"
             },
         ],
         "installation_requirements": [
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Django",
+                "version": "4.1.4"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Python",
+                "version": "3.10"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "graphene-django",
+                "version": "3.0.0"
             },
         ],
         "requirements_file": "Requirements.txt",
-        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main",
+        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main/blob/main/requirements.txt",
         "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
     },
     "rest-api-django": {
@@ -98,7 +137,7 @@ projects_information = {
         "description": "PROJECT_DESCRIPTION",
         "technolgies_used": [
             {
-                "name": "docker",
+                "name": "Django - Python Framewrok",
                 "description": "TECHNOLOGY DESCRIPTION",
                 "icon": 'docker'
             },
