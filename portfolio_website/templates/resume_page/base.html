@@ -485,12 +485,12 @@
               >
               <span> &nbsp;&nbsp; &nbsp; &nbsp;|&nbsp;</span>
               {% if project_data.web_page == True %}
+
               <a
                 href="{% url 'project_page:base_page' project_data.web_link %}"
                 target="_blank"
               >
-                More Info <i class="icon solid fa-arrow-pointer"></i
-              ></a>
+              <span class="label">More Info</span> </a>
               {% elif project_data.web_page is False %}
               <a
                 href="{% url 'project_page:github_page' project_data.web_link %}"
@@ -553,6 +553,9 @@
 			  >
 			</li>
 		  </ul>
+      <div style="padding: 5px;">
+
+      </div>
 		  &copy;2023 Design: <a href="#">HTML5 UP</a></div>
     </div>
 
