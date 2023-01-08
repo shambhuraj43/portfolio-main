@@ -44,7 +44,7 @@
 
       <!-- Nav -->
       <div id="sticky">
-        <nav id="nav" >
+        <nav id="nav">
           <ul class="links">
             <li class="active"><a href="#Education">Education</a></li>
             <li><a href="#professional-experience">Experience</a></li>
@@ -56,6 +56,12 @@
           <ul class="icons">
             <li>
               <a
+                href="{% url 'landing_page:index' %}"
+                class="icon solid fa-arrow-pointer"
+              ></a>
+            </li>
+            <li>
+              <a
                 href="https://www.linkedin.com/in/shambhuraj/"
                 class="icon brands fa-linkedin"
                 ><span class="label">LinkedIn</span></a
@@ -63,7 +69,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/Shambhuraj43"
+                href="https://github.com/shambhuraj43"
                 class="icon brands fa-github"
                 ><span class="label">Github</span></a
               >
@@ -71,6 +77,11 @@
             <li>
               <a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope"
                 ><span class="label">Email</span></a
+              >
+            </li>
+            <li>
+              <a href="" download class="icon solid fa-arrow-down"
+                ><span class="label">Download Resume</span></a
               >
             </li>
           </ul>
@@ -90,9 +101,7 @@
                 BS in Computer Science (Honors), Minor: Mathematics and
                 Statistics, GPA: 3.6
               </h3>
-              <h4>
-                December 2022
-              </h4>
+              <h4>December 2022</h4>
               <h4>Purdue School of Science, IUPUI</h4>
               <ul class="bullets_dash">
                 <li>Dean’s List, Scholar’s List</li>
@@ -490,7 +499,8 @@
                 href="{% url 'project_page:base_page' project_data.web_link %}"
                 target="_blank"
               >
-              <span class="label">More Info</span> </a>
+                More Info <i class="icon solid fa-arrow-pointer"></i
+              ></a>
               {% elif project_data.web_page is False %}
               <a
                 href="{% url 'project_page:github_page' project_data.web_link %}"
@@ -527,36 +537,47 @@
 
       <!-- Copyright -->
       <div id="copyright">
-		<ul class="icons alt">
-			<li>
-			  <a
-				href="https://www.linkedin.com/in/shambhuraj/"
-				target="_blank"
-				class="icon brands fa-linkedin"
-				><span class="label">LinkedIn</span></a
-			  >
-			</li>
-			<li>
-			  <a
-				href="https://github.com/Shambhuraj43"
-				target="_blank"
-				class="icon brands fa-github"
-				><span class="label">Github</span></a
-			  >
-			</li>
-			<li>
-			  <a
-				href="mailto:srajw818@gmail.com"
-				title="srajw818@gmail.com"
-				class="icon solid fa-envelope"
-				><span class="label">Email</span></a
-			  >
-			</li>
-		  </ul>
-      <div style="padding: 5px;">
-
+        <ul class="icons alt">
+          <li>
+            <a
+              href="{% url 'landing_page:index' %}"
+              class="icon solid fa-arrow-pointer"
+              ><span class="label">Website</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/shambhuraj/"
+              target="_blank"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/shambhuraj43"
+              target="_blank"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:srajw818@gmail.com"
+              title="srajw818@gmail.com"
+              class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+          <li>
+            <a href="" download class="icon solid fa-arrow-down"
+              ><span class="label">Download Resume</span></a
+            >
+          </li>
+        </ul>
+        <div style="padding: 5px"></div>
+        &copy;2023 Design: <a href="#">HTML5 UP</a>
       </div>
-		  &copy;2023 Design: <a href="#">HTML5 UP</a></div>
     </div>
 
     <!-- Scripts -->
