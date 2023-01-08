@@ -56,8 +56,8 @@ projects_context = {
 # Context to generate Project Pages.
 projects_information = {
     "portfolio-main": {
-        "name": "PROJECT_NAME",
-        "description": "PROJECT_DESCRIPTION",
+        "name": "Portfolio Website",
+        "description": "I have built to provide information about myself. It contains my resume and the independent projects I have worked on as a Computer Science Undergraduate at IUPUI, Indianapolis.",
         "technolgies_used": [
             {
                 "name": "Django - Python Framewrok",
