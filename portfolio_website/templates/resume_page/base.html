@@ -3,7 +3,7 @@
 
 <html>
   <head>
-    <title>Shambhuraj's Portfolio</title>
+    <title>Shambhuraj's Résumé</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -11,12 +11,12 @@
     />
     <link
       rel="stylesheet"
-      href="{% static 'landing_page/assets/css/main.css' %}"
+      href="{% static 'resume_page/assets/css/main.css' %}"
     />
     <noscript
       ><link
         rel="stylesheet"
-        href="{% static 'landing_page/assets/css/noscript.css' %}"
+        href="{% static 'resume_page/assets/css/noscript.css' %}"
     /></noscript>
   </head>
   <body class="is-preload">
@@ -43,37 +43,39 @@
       </header>
 
       <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="#Education">Education</a></li>
-          <li><a href="#professional-experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/shambhuraj/"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/Shambhuraj43"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div id="sticky">
+        <nav id="nav" >
+          <ul class="links">
+            <li class="active"><a href="#Education">Education</a></li>
+            <li><a href="#professional-experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/shambhuraj/"
+                class="icon brands fa-linkedin"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Shambhuraj43"
+                class="icon brands fa-github"
+                ><span class="label">Github</span></a
+              >
+            </li>
+            <li>
+              <a href="mailto:srajw818@gmail.com" class="icon solid fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <!-- Main -->
       <div id="main">
@@ -555,12 +557,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{% static 'landing_page/assets/js/jquery.min.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/jquery.scrollex.min.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/jquery.scrolly.min.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/browser.min.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/breakpoints.min.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/util.js' %}"></script>
-    <script src="{% static 'landing_page/assets/js/main.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/jquery.scrollex.min.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/jquery.scrolly.min.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/browser.min.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/breakpoints.min.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/util.js' %}"></script>
+    <script src="{% static 'resume_page/assets/js/main.js' %}"></script>
   </body>
 </html>
