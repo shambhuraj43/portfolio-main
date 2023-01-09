@@ -21,7 +21,8 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("landing_page.urls")),
-    path('', include("resume_section.urls")),
+    path('old_resume/', include("resume_section.urls")),
     path('', include("signup_section.urls")),
     path('', include("project_page.urls")),
+    path('resume/', include("resume_page.urls")),
 ]

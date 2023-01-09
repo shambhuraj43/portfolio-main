@@ -56,79 +56,192 @@ projects_context = {
 # Context to generate Project Pages.
 projects_information = {
     "portfolio-main": {
-        "name": "PROJECT_NAME",
-        "description": "PROJECT_DESCRIPTION",
+        "name": "Portfolio Website",
+        "description": "I have built this website to provide information about myself. It contains my resume and the independent projects I have worked on as a Computer Science Undergraduate at IUPUI, Indianapolis.",
         "technolgies_used": [
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": 'docker'
+                "name": "Django - Python Framework",
+                "description": "Built Django's MVT Architecture and ORM Feature",
+                "icon": 'python',
+                "icon_type": 'brands'
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "Docker",
+                "description": "Containerization with Docker Compose and Docker Hub Artifactory",
+                "icon": "docker",
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "MySQL & SQLite",
+                "description": "Database for storing project related information",
+                "icon": "database",
+                "icon_type": "solid"
+            },
+            {
+                "name": "GraphQL & REST API",
+                "description": "CRUD Operations on Data with GraphQL (using Graphene), Django REST Framework",
+                "icon": "circle-nodes",
+                "icon_type": "solid",
+            },
+            {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+            {
+                "name": "GitHub Actions",
+                "description": "CI/CD Pipeline, Automated linting, testing, building, containerization, pushing to Docker Hub Artifactory",
+                "icon": "circle-play",
+                "icon_type": "regular"
+            },
+            {
+                "name": "Test Driven Development",
+                "description": "Testing with PyTest Library",
+                "icon": "screwdriver-wrench",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Cloud Deployment",
+                "description": "Python Anywhere Service, AWS",
+                "icon": "cloud-arrow-up",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Local Deployment",
+                "description": "Apache2, Ubuntu",
+                "icon": "server",
+                "icon_type": "solid"
             },
         ],
         "installation_requirements": [
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Django",
+                "version": "4.1.4"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Python",
+                "version": "3.10"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "graphene-django",
+                "version": "3.0.0"
             },
         ],
         "requirements_file": "Requirements.txt",
-        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main",
+        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main/blob/main/requirements.txt",
         "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
     },
     "rest-api-django": {
-        "name": "PROJECT_NAME",
-        "description": "PROJECT_DESCRIPTION",
+        "name": "REST API Project",
+        "description": "This application utilizes the REST API standard to perform CRUD operations on data.",
         "technolgies_used": [
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": 'docker'
+                "name": "Django - Python Framework",
+                "description": "Built in Django with Django Rest Framework",
+                "icon": 'python',
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "Docker",
+                "description": "Containerization using docker-compose, used GHCR artifactory for build pushes",
+                "icon": "docker",
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "SQLite",
+                "description": "Database for storing project related information",
+                "icon": "database",
+                "icon_type": "solid"
             },
+             {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+
+
         ],
         "installation_requirements": [
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Python",
+                "version": "3.10"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Django",
+                "version": "4.1.4"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "djangorestframework",
+                "version": "3.14.0"
+            },
+            {
+                "req": "sqlparse",
+                "version": "0.4.3"
             },
         ],
         "requirements_file": "Requirements.txt",
-        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main",
-        "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
+        "requirements_file_link": "https://github.com/shambhuraj43/rest-api-django/blob/main/requirements.txt",
+        "github_repo_link": "https://github.com/shambhuraj43/rest-api-django"
+    },
+    "Exercise-Tracker-App": {
+        "name": "Habit Tracker",
+        "description": "A habit tracking web application built with MERN stack that allows the user to add exercise with minimal description, update and delete information, and view all the information on a simple web interface.",
+        "technolgies_used": [
+            {
+                "name": "Node JS - Runtime",
+                "description": "Built in Django with Django Rest Framework",
+                "icon": 'node',
+                "icon_type": "brands"
+            },
+            {
+                "name": "React",
+                "description": "Built with React JS library",
+                "icon": 'react',
+                "icon_type": "brands"
+            },
+            {
+                "name": "MongoDB",
+                "description": "Database for storing project related information",
+                "icon": "database",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Cloud Deployment",
+                "description": "Heroku",
+                "icon": "cloud-arrow-up",
+                "icon_type": "solid"
+            },
+
+
+        ],
+        "installation_requirements": [
+            {
+                "req": "React",
+                "version": "^17.0.2"
+            },
+            {
+                "req": "Mongoose",
+                "version": "^5.6.6"
+            },
+            {
+                "req": "Express",
+                "version": "^4.17.3"
+            },
+            {
+                "req": "sqlparse",
+                "version": "0.4.3"
+            },
+        ],
+        "requirements_file": "Package.json",
+        "requirements_file_link": "https://github.com/shambhuraj43/Exercise-Tracker-App/blob/master/package.json",
+        "github_repo_link": "https://github.com/shambhuraj43/Exercise-Tracker-App"
     }
 }

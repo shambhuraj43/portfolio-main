@@ -26,7 +26,7 @@
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" style="zoom: 80%">
       <!-- Header -->
       <header id="header" class="alt">
         <!-- <span class="logo"><img src='{% static "project_page/images/logo.svg" %}'' alt="" /></span> -->
@@ -83,7 +83,7 @@
           <ul class="features">
             {% for technology in project.technolgies_used %}
             <li>
-              <i class="fa-brands fa-{{technology.icon}} fa-3x"></i>
+              <i class="fa-{{technology.icon_type}} fa-{{technology.icon}} fa-3x"></i>
               <h3>{{ technology.name }}</h3>
               <p>{{ technology.description }}</p>
             </li>
@@ -96,8 +96,10 @@
           <header class="major">
             <h2>Installation Requirements</h2>
             <ul class="features">
+              <p>|</p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               {% for item in project.installation_requirements %}
-              <p>item.req : item.version</p>
+              <p>{{ item.req }} : {{ item.version }}</p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <p>|</p>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {% endfor %}
@@ -107,7 +109,7 @@
             <ul class="actions special">
               <li>
                 <a
-                  href="{{requirements_file_link}}"
+                  href="{{project.requirements_file_link}}"
                   target="_blank"
                   class="button"
                   >{{ project.requirements_file }}</a
@@ -125,7 +127,7 @@
           <footer class="major">
             <ul class="actions special">
               <li>
-                <a href="{{github_repo_link}}" target="_blank" class="button"
+                <a href="{{project.github_repo_link}}" target="_blank" class="button"
                   >GitHub</a
                 >
               </li>
@@ -172,7 +174,6 @@
 			  </footer>
 			</div>
 	
-    </div>
 
 
     <!-- Scripts -->

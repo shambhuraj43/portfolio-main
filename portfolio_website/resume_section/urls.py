@@ -31,11 +31,11 @@ resume_sections = [
     ]
 
 urlpatterns = [
-    path('resume/', views.resume_page, name='resume_page'),
-    path('resume/education', views.education, name='education'),
-    path('resume/professional_experience', views.professional_experience, name='professional_experience'),
-    path('resume/publications', views.publications, name='publications'),
-    path('resume/leadership', views.leadership, name='leadership'),
-    path('resume/skills', views.skills, name='skills'),
-    path('resume/projects', views.projects, name='projects'),
+    path('', views.resume_page, name='resume_page'),
+    path('education', views.education, name='education'),
+    path('professional_experience', views.professional_experience, name='professional_experience'),
+    path('publications', views.publications, name='publications'),
+    path('leadership', views.leadership, name='leadership'),
+    path('skills', views.skills, name='skills'),
+    path('projects', views.projects, name='projects'),
 ]
