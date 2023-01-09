@@ -55,7 +55,7 @@
 									<h2><a href="#">Portfolio Website </a></h2>
 									<p>
 								</header>
-								<a href="#" class="image main"><img src="{% static 'landing_page/images/portfolio5.png' %}" alt="" /></a>
+								<a href="{% url 'project_page:base_page' 'portfolio-main' %}" class="image main"><img src="{% static 'landing_page/images/portfolio5.png' %}" alt="" /></a>
 								<p>
 									Portfolio Website to show my work so far!
 								</p>
@@ -72,7 +72,7 @@
 										<span class="date">October 2022</span>
 										<h2><a href="#">Django Rest API Application</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="{% static 'landing_page/images/rest-api-django.png' %}" alt="" /></a>
+									<a href="{% url 'project_page:base_page' 'rest-api-django' %}" class="image fit"><img src="{% static 'landing_page/images/rest-api-django.png' %}" alt="" /></a>
 									<p>REST API standard to perform CRUD operations.</p>
 									<ul class="actions special">
 										<li><a href="{% url 'project_page:base_page' 'rest-api-django' %}" class="button">Learn More</a></li>
@@ -83,7 +83,7 @@
 										<span class="date">May 2022</span>
 										<h2><a href="#">Habit Tracker Application</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="{% static 'landing_page/images/habit-tracker.png' %}" alt="" /></a>
+									<a href="{% url 'project_page:base_page' 'Exercise-Tracker-App' %}" class="image fit"><img src="{% static 'landing_page/images/habit-tracker.png' %}" alt="" /></a>
 									<p>Developed a MERN stack application and retrieved user data from MongoDB NoSQL database to analyze and process it in the app's
 										functioning with increased scalability and functionality.</p>
 									<ul class="actions special">
@@ -95,7 +95,7 @@
 										<span class="date">March 2022</span>
 										<h2><a href="#">Software Design Calculator App</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="{% static 'landing_page/images/calculator.png' %}" alt="" /></a>
+									<a href="{% url 'project_page:base_page' 'Optimized_Software_Design_Calculator_App ' %}" class="image fit"><img src="{% static 'landing_page/images/calculator.png' %}" alt="" /></a>
 									<p>Implemented software design techniques by redesigning a calculator app to ensure performance and optimality.</p>
 									<ul class="actions special">
 										<li><a href="{% url 'project_page:base_page' 'Optimized_Software_Design_Calculator_App ' %}" class="button">Learn More</a></li>
@@ -103,10 +103,10 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">April 11, 2017</span>
+										<span class="date">February 2022</span>
 										<h2><a href="#">Random User Generator App</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="{% static 'landing_page/images/random-user.png' %}" alt="" /></a>
+									<a href="{% url 'project_page:base_page' 'contact-card-app' %}" class="image fit"><img src="{% static 'landing_page/images/random-user.png' %}" alt="" /></a>
 									<p> Built with the MERN stack, this application provides a web interface to generate random users with fake information using a third party API.<p>
 									<ul class="actions special">
 										<li><a href="{% url 'project_page:base_page' 'contact-card-app' %}" class="button">Learn More</a></li>
@@ -114,8 +114,8 @@
 								</article>
 								<article>
 									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Pathfinder App</a></h2>
+										<span class="date">November 2021</span>
+										<h2><a href="{% url 'project_page:base_page' 'Pathfinder-Application' %}">Pathfinder App</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="{% static 'landing_page/images/pathfinder.png' %}" alt="" /></a>
 									<p> Shortest Path Finder application built in Java and uses different Graph theory algorithms.<p>
