@@ -48,34 +48,31 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-						<!--
+						
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">November, 2022 - Present</span>
+									<h2><a href="#">Portfolio Website </a></h2>
+									<p>
 								</header>
-								<a href="#" class="image main"><img src="{% static 'landing_page/images/pic01.jpg' %}" alt="" /></a>
+								<a href="#" class="image main"><img src="{% static 'landing_page/images/portfolio5.png' %}" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+									<li><a href="{% url 'project_page:base_page' 'portfolio-main' %}" class="button large">Learn More</a></li>
 								</ul>
 							</article>
-						-->
+						
 
 						<!-- Posts -->
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">November, 2022 - Present</span>
-										<h2><a href="#">Portfolio Website</a></h2>
+										<span class="date">October 2022</span>
+										<h2><a href="#">Django Rest API Application</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="{% static 'landing_page/images/pic02.jpg' %}" alt="" /></a>
-									<p>Website to Showcase Independent Projects built with Django and hosted on Python Anywhere.</p>
+									<p>REST API standard to perform CRUD operations.</p>
 									<ul class="actions special">
-										<li><a href="{% url 'project_page:base_page' 'portfolio' %}" class="button">Learn More</a></li>
+										<li><a href="{% url 'project_page:base_page' 'rest-api-django' %}" class="button">Learn More</a></li>
 									</ul>
 								</article>
 								<article>
@@ -158,50 +155,6 @@
 							</footer>
 
 					</div>
-
-				<!-- Footer -->
-					<!-- <footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-							</section>
-						</section>
-					</footer>
-					 -->
 
 				<!-- Copyright -->
 					<div id="copyright">
