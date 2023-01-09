@@ -57,7 +57,7 @@ projects_context = {
 projects_information = {
     "portfolio-main": {
         "name": "Portfolio Website",
-        "description": "I have built to provide information about myself. It contains my resume and the independent projects I have worked on as a Computer Science Undergraduate at IUPUI, Indianapolis.",
+        "description": "I have built this website to provide information about myself. It contains my resume and the independent projects I have worked on as a Computer Science Undergraduate at IUPUI, Indianapolis.",
         "technolgies_used": [
             {
                 "name": "Django - Python Framewrok",
