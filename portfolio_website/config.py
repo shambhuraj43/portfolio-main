@@ -60,7 +60,7 @@ projects_information = {
         "description": "I have built this website to provide information about myself. It contains my resume and the independent projects I have worked on as a Computer Science Undergraduate at IUPUI, Indianapolis.",
         "technolgies_used": [
             {
-                "name": "Django - Python Framewrok",
+                "name": "Django - Python Framework",
                 "description": "Built Django's MVT Architecture and ORM Feature",
                 "icon": 'python',
                 "icon_type": 'brands'
@@ -73,7 +73,7 @@ projects_information = {
             },
             {
                 "name": "MySQL & SQLite",
-                "description": "Database for storing Project related Information",
+                "description": "Database for storing project related information",
                 "icon": "database",
                 "icon_type": "solid"
             },
@@ -133,41 +133,56 @@ projects_information = {
         "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
     },
     "rest-api-django": {
-        "name": "PROJECT_NAME",
-        "description": "PROJECT_DESCRIPTION",
+        "name": "REST API Project",
+        "description": "This application utilizes the REST API standard to perform CRUD operations on data.",
         "technolgies_used": [
             {
-                "name": "Django - Python Framewrok",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": 'docker'
+                "name": "Django - Python Framework",
+                "description": "Built in Django with Django Rest Framework",
+                "icon": 'python',
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "Docker",
+                "description": "Containerization using docker-compose, used GHCR artifactory for build pushes",
+                "icon": "docker",
+                "icon_type": "brands"
             },
             {
-                "name": "docker",
-                "description": "TECHNOLOGY DESCRIPTION",
-                "icon": "none"
+                "name": "SQLite",
+                "description": "Database for storing project related information",
+                "icon": "database",
+                "icon_type": "solid"
             },
+             {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+
+
         ],
         "installation_requirements": [
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Python",
+                "version": "3.10"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "Django",
+                "version": "4.1.4"
             },
             {
-                "req": "PYTHON",
-                "version": "VERSION"
+                "req": "djangorestframework",
+                "version": "3.14.0"
+            },
+            {
+                "req": "sqlparse",
+                "version": "0.4.3"
             },
         ],
         "requirements_file": "Requirements.txt",
-        "requirements_file_link": "https://github.com/shambhuraj43/portfolio-main",
-        "github_repo_link": "https://github.com/shambhuraj43/portfolio-main"
+        "requirements_file_link": "https://github.com/shambhuraj43/rest-api-django/blob/main/requirements.txt",
+        "github_repo_link": "https://github.com/shambhuraj43/rest-api-django"
     }
 }
