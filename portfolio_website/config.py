@@ -21,7 +21,7 @@ projects_context = {
         "web_page": True,
         "web_link": "Exercise-Tracker-App",
     },
-    "Software_Design_Calculator_App": {
+    "Optimized_Software_Design_Calculator_App": {
         "name": "Software Design Calculator",
         "technologies": "Software Design, SOLID Principles",
         "web_page": False,
