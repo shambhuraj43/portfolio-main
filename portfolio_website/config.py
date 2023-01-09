@@ -184,5 +184,64 @@ projects_information = {
         "requirements_file": "Requirements.txt",
         "requirements_file_link": "https://github.com/shambhuraj43/rest-api-django/blob/main/requirements.txt",
         "github_repo_link": "https://github.com/shambhuraj43/rest-api-django"
+    },
+    "Exercise-Tracker-App": {
+        "name": "Habit Tracker",
+        "description": "A habit tracking web application built with MERN stack that allows the user to add exercise with minimal description, update and delete information, and view all the information on a simple web interface.",
+        "technolgies_used": [
+            {
+                "name": "Node JS - Runtime",
+                "description": "Built in Django with Django Rest Framework",
+                "icon": 'node',
+                "icon_type": "brands"
+            },
+            {
+                "name": "React",
+                "description": "Built with React JS library",
+                "icon": 'react',
+                "icon_type": "brands"
+            },
+            {
+                "name": "MongoDB",
+                "description": "Database for storing project related information",
+                "icon": "database",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Git/GitHub",
+                "description": "Source Code Management",
+                "icon": "code-branch",
+                "icon_type": "solid"
+            },
+            {
+                "name": "Cloud Deployment",
+                "description": "Heroku",
+                "icon": "cloud-arrow-up",
+                "icon_type": "solid"
+            },
+
+
+        ],
+        "installation_requirements": [
+            {
+                "req": "React",
+                "version": "^17.0.2"
+            },
+            {
+                "req": "Mongoose",
+                "version": "^5.6.6"
+            },
+            {
+                "req": "Express",
+                "version": "^4.17.3"
+            },
+            {
+                "req": "sqlparse",
+                "version": "0.4.3"
+            },
+        ],
+        "requirements_file": "Package.json",
+        "requirements_file_link": "https://github.com/shambhuraj43/Exercise-Tracker-App/blob/master/package.json",
+        "github_repo_link": "https://github.com/shambhuraj43/Exercise-Tracker-App"
     }
 }
